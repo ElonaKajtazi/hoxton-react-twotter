@@ -1,104 +1,69 @@
 import { useState } from "react";
 
 import "./App.css";
+import { LeftMenu } from "./components/LeftMenu";
 
 function App() {
   return (
     <div className="App">
-      <section className="left-menu">
-        <img
-          className="twotter-logo"
-          src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-          alt=""
-        />
-        <nav>
-          <ul className="nav-list">
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png"
-                  alt="home"
-                />
-                <h3>Home</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons-png.flaticon.com/512/1827/1827975.png"
-                  alt="explore"
-                />
-                <h3>Explore</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons.flaticon.com/png/512/2529/premium/2529521.png?token=exp=1660056106~hmac=a7b253cf767b0de13b6c016b67282861"
-                  alt="notifications"
-                />
-                <h3>Notification</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons.flaticon.com/png/512/542/premium/542638.png?token=exp=1660056246~hmac=048be8a8df7360333d8bbf89a64d9f84"
-                  alt="messages"
-                />
-                <h3>Messages</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons-png.flaticon.com/512/25/25667.png"
-                  alt="bookmarks"
-                />
-                <h3>Bookmarks</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons.flaticon.com/png/512/1950/premium/1950715.png?token=exp=1660056418~hmac=fdc89ba4e830f6e3c326adee9c5ce9d2"
-                  alt="lists"
-                />
-                <h3>Lists</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
-                  alt="profile"
-                />
-                <h3>Profile</h3>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="nav-list-item">
-                <img
-                  className="nav-icon"
-                  src="https://cdn-icons-png.flaticon.com/512/570/570223.png"
-                  alt="more"
-                />
-                <h3>More</h3>
-              </a>
-            </li>
-            <button className="tweet-btn">Tweet</button>
-          </ul>
-        </nav>
-      </section>
+      <LeftMenu />
       <section className="main">
-        <h2>Main Content</h2>
+        <h1>Home</h1>
+
+        <form className="tweet-form">
+          <img
+            className="user-profile-image"
+            src="https://images.pexels.com/photos/2406949/pexels-photo-2406949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <input type="text" placeholder="What's happening?" />
+          <button className="home__tweet-btn">Tweet</button>
+        </form>
+        <ul className="tweets">
+          <li className="single-tweet">
+            <h3>Elona @ElonaKajtazi * 12h</h3>
+            <p>Wine</p>
+            <img
+              className="tweet-image"
+              src="https://images.pexels.com/photos/8473212/pexels-photo-8473212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="wine"
+            />
+            <div className="reacting-icons">
+              <span className="reacting-icon-container">
+                <img
+                  className="reacting-icon"
+                  src="https://cdn-icons.flaticon.com/png/512/3031/premium/3031126.png?token=exp=1660079824~hmac=5d8360ee543866e3131db0341642095e"
+                  alt="comments icon"
+                />
+                <span>2</span>
+              </span>
+              <span className="reacting-icon-container">
+                <img
+                  className="reacting-icon"
+                  src="https://cdn-icons.flaticon.com/png/512/5436/premium/5436565.png?token=exp=1660079771~hmac=66fca1bfd8b770da314a69fbca5f4ade"
+                  alt="retweet icon"
+                />
+                <span>2</span>
+              </span>
+              <span className="reacting-icon-container">
+                <img
+                  className="reacting-icon"
+                  src="https://cdn-icons.flaticon.com/png/512/2961/premium/2961957.png?token=exp=1660079958~hmac=f144df53cd8c2ddb0ecc467002ba2b96"
+                  alt="like icon"
+                />
+                <span>2</span>
+              </span>
+              <span className="reacting-icon-container">
+                <img
+                  className="reacting-icon"
+                  src="https://cdn-icons-png.flaticon.com/512/3580/3580382.png"
+                  alt="share icon"
+                />
+                <span>2</span>
+              </span>
+            </div>
+          </li>
+        </ul>
       </section>
       <section className="right-menu">
         <h2>Right Menu</h2>
