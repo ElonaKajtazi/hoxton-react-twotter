@@ -25,14 +25,9 @@ function App() {
               <h3>
                 {tweet.name} {tweet.userName}
               </h3>
-              <p>{tweet.description}</p>
-              <img
-                className="tweet-image"
-                src={tweet.image}
-                alt={tweet.description}
-              />
+              <p>Wine</p>
+              <img className="tweet-image" src={tweet.image} alt={tweet.name} />
               <div className="reacting-icons">
-                
                 <span className="reacting-icon-container">
                   <img
                     className="reacting-icon"
