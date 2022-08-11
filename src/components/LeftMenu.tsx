@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function LeftMenu() {
   return (
     <section className="left-menu">
@@ -9,14 +11,15 @@ export function LeftMenu() {
       <nav>
         <ul className="nav-list">
           <li>
-            <a href="#" className="nav-list-item">
+            <Link to="/home" className="nav-list-item">
+              {" "}
               <img
                 className="nav-icon"
                 src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png"
                 alt="home"
               />
               <h2 className="lm-item-title">Home</h2>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="nav-list-item">
@@ -69,14 +72,15 @@ export function LeftMenu() {
             </a>
           </li>
           <li>
-            <a href="#" className="nav-list-item">
+            <Link to="/profile" className="nav-list-item">
+              {" "}
               <img
                 className="nav-icon"
                 src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png"
                 alt="profile"
               />
               <h2 className="lm-item-title">Profile</h2>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="nav-list-item">
@@ -85,7 +89,7 @@ export function LeftMenu() {
                 src="https://cdn-icons-png.flaticon.com/512/570/570223.png"
                 alt="more"
               />
-              <h2  className="lm-item-title">More</h2>
+              <h2 className="lm-item-title">More</h2>
             </a>
           </li>
           <button className="tweet-btn">Tweet</button>
