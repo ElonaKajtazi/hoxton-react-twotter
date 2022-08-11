@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Elona",
+      "userName": "@ElonaKajtazi",
+      "description": "Wine is the best",
+      "image": "https://images.pexels.com/photos/8473212/pexels-photo-8473212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "reactions": {
+        "like": 3,
+        "retweet": 1,
+        "comment": 2,
+        "share": 1
+      }
+    },
+    {
+      "id": 1,
+      "name": "Diana",
+      "userName": "@Diana",
+      "description": "Wiew",
+      "image": "https://images.pexels.com/photos/12977998/pexels-photo-12977998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "reactions": {
+        "like": 7,
+        "retweet": 2,
+        "comment": 1,
+        "share": 3
+      }
+    }
+  ]
+}
