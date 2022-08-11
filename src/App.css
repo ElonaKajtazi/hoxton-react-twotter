@@ -59,7 +59,7 @@
   height: 35px;
   border-radius: 50%;
 }
-.tweet-form {
+.new-tweet-form {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 0.5rem;
